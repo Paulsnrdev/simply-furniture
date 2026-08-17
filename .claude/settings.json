@@ -30,7 +30,11 @@
       "Bash(nslookup api.github.com)",
       "Bash(curl -4 -v --connect-timeout 10 --max-time 15 https://api.github.com/)",
       "Bash(node \"C:\\\\Users\\\\PAUL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-PAUL-Documents-Coding-for-IT-Furniture-Website\\\\f73fe75c-22b3-4ae4-8cb5-b70ea4f7f89e\\\\scratchpad\\\\push-to-github.mjs\")",
-      "Bash(curl -s -X DELETE -H 'Authorization: Bearer __CMDSUB_OUTPUT__' -H 'Accept: application/vnd.github+json' -o /dev/null -w 'delete status: %{http_code}\\\\n' https://api.github.com/repos/Paulsnrdev/simply-furniture)"
+      "Bash(curl -s -X DELETE -H 'Authorization: Bearer __CMDSUB_OUTPUT__' -H 'Accept: application/vnd.github+json' -o /dev/null -w 'delete status: %{http_code}\\\\n' https://api.github.com/repos/Paulsnrdev/simply-furniture)",
+      "Bash(node -e ' *)",
+      "Bash(vercel --prod --yes --project simply-furniture)",
+      "Bash(node -e \"fetch\\('https://simply-furniture.vercel.app/'\\).then\\(r=>r.text\\(\\)\\).then\\(t=>{console.log\\('status ok, length:', t.length\\); console.log\\('has simply furniture:', t.includes\\('simply'\\)\\); console.log\\('has nav Shop link:', t.includes\\('/shop'\\)\\);}\\)\")",
+      "Bash(node \"C:\\\\Users\\\\PAUL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-PAUL-Documents-Coding-for-IT-Furniture-Website\\\\f73fe75c-22b3-4ae4-8cb5-b70ea4f7f89e\\\\scratchpad\\\\push-update.mjs\")"
     ]
   }
 }
