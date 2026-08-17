@@ -1,0 +1,36 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx --yes create-next-app@latest . --typescript --tailwind --app --src-dir --import-alias \"@/*\" --eslint --use-npm --no-turbopack --yes)",
+      "Bash(npx --yes create-next-app@latest furniture-website --typescript --tailwind --app --src-dir --import-alias \"@/*\" --eslint --use-npm --no-turbopack --yes)",
+      "Bash(taskkill //F //PID 2084)",
+      "Bash(taskkill //F //PID 2146)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 3000,3002 -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-CimInstance Win32_Process -Filter \"Name='node.exe'\")",
+      "PowerShell(Get-NetTCPConnection -LocalPort 3001 -ErrorAction SilentlyContinue)",
+      "Bash(curl -sS --max-time 8 -o /dev/null -w \"fonts.googleapis.com -> %{http_code}\\\\n\" https://fonts.googleapis.com/)",
+      "Bash(curl -sS --max-time 8 -o /dev/null -w \"google.com -> %{http_code}\\\\n\" https://www.google.com/)",
+      "Bash(curl -sS --max-time 10 -o /dev/null -w \"fonts.googleapis.com -> %{http_code}\\\\n\" https://fonts.googleapis.com/)",
+      "PowerShell(Stop-Process -Id 17512 -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Id 19440 -Force -ErrorAction SilentlyContinue)",
+      "Bash(curl -s -o /dev/null -w \"/ -> %{http_code}\\\\n\" --max-time 40 http://localhost:3210/)",
+      "PowerShell(Get-NetTCPConnection -LocalPort 3210 -ErrorAction SilentlyContinue)",
+      "PowerShell(Test-NetConnection -ComputerName 127.0.0.1 -Port 3210 -WarningAction SilentlyContinue)",
+      "WebFetch(domain:unsplash.com)",
+      "Bash(curl -sS -o /dev/null -w \"api.github.com -> %{http_code} \\(%{time_total}s\\)\\\\n\" --connect-timeout 10 --max-time 20 https://api.github.com/)",
+      "PowerShell(gh api user 2>&1)",
+      "Bash(curl -sS -o /dev/null -w \"github.com -> %{http_code}\\\\n\" --connect-timeout 10 --max-time 20 https://github.com/)",
+      "Bash(npm ping *)",
+      "Bash(node -e \"fetch\\('https://github.com/'\\).then\\(r=>console.log\\('github.com status:', r.status\\)\\).catch\\(e=>console.log\\('github.com error:', e.message\\)\\)\")",
+      "Bash(node -e \"fetch\\('https://api.github.com/'\\).then\\(r=>console.log\\('api.github.com status:', r.status\\)\\).catch\\(e=>console.log\\('api.github.com error:', e.message\\)\\)\")",
+      "Bash(git -c http.lowSpeedLimit=0 -c http.lowSpeedTime=0 ls-remote https://github.com/octocat/Hello-World.git)",
+      "PowerShell(git ls-remote https://github.com/octocat/Hello-World.git 2>&1)",
+      "Bash(ssh -T -o ConnectTimeout=15 -o StrictHostKeyChecking=accept-new git@github.com)",
+      "Bash(file public/*)",
+      "Bash(nslookup api.github.com)",
+      "Bash(curl -4 -v --connect-timeout 10 --max-time 15 https://api.github.com/)",
+      "Bash(node \"C:\\\\Users\\\\PAUL\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--Users-PAUL-Documents-Coding-for-IT-Furniture-Website\\\\f73fe75c-22b3-4ae4-8cb5-b70ea4f7f89e\\\\scratchpad\\\\push-to-github.mjs\")",
+      "Bash(curl -s -X DELETE -H 'Authorization: Bearer __CMDSUB_OUTPUT__' -H 'Accept: application/vnd.github+json' -o /dev/null -w 'delete status: %{http_code}\\\\n' https://api.github.com/repos/Paulsnrdev/simply-furniture)"
+    ]
+  }
+}

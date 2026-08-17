@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+:root {
+  --color-maroon-950: #2b0a13;
+  --color-maroon-900: #3a0f1a;
+  --color-maroon-800: #4a1420;
+  --color-maroon-700: #5c1b29;
+  --color-maroon-600: #7a2233;
+  --color-maroon-400: #a8586a;
+  --color-cream-50: #f8ede8;
+  --color-cream-100: #f0ddd3;
+  --color-cream-200: #e7cabc;
+  --color-ink: #2a1a1d;
+  --color-paper: #fdf6f2;
+
+  --background: var(--color-cream-50);
+  --foreground: var(--color-ink);
+  --surface-dark: var(--color-maroon-950);
+  --surface-dark-2: var(--color-maroon-900);
+  --on-dark: var(--color-paper);
+  --on-dark-muted: var(--color-cream-200);
+  --accent: var(--color-maroon-600);
+  --accent-hover: var(--color-maroon-700);
+
+  --font-display:
+    ui-rounded, "SF Pro Rounded", "Segoe UI", system-ui, sans-serif;
+  --font-sans:
+    ui-sans-serif, "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+@theme inline {
+  --color-maroon-950: var(--color-maroon-950);
+  --color-maroon-900: var(--color-maroon-900);
+  --color-maroon-800: var(--color-maroon-800);
+  --color-maroon-700: var(--color-maroon-700);
+  --color-maroon-600: var(--color-maroon-600);
+  --color-maroon-400: var(--color-maroon-400);
+  --color-cream-50: var(--color-cream-50);
+  --color-cream-100: var(--color-cream-100);
+  --color-cream-200: var(--color-cream-200);
+  --color-ink: var(--color-ink);
+  --color-paper: var(--color-paper);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface-dark: var(--surface-dark);
+  --color-surface-dark-2: var(--surface-dark-2);
+  --color-on-dark: var(--on-dark);
+  --color-on-dark-muted: var(--on-dark-muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee-scroll 28s linear infinite;
+}
